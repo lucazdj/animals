@@ -1,1 +1,1 @@
-# animals-javascript-e6
+Projeto de um curso.
