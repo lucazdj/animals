@@ -1,22 +1,23 @@
 {
-  "name": "javascript",
+  "name": "animals-javascript-e6",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "build": "webpack --mode production ./js/script.js -o ./js/main",
-    "dev": "webpack --mode development --watch ./js/script.js -o ./js/main"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
   },
-  "author": "",
+  "author": "lucazdj",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-transform-runtime": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.16.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
-  },
-  "dependencies": {
-    "jquery": "^3.6.0"
   }
 }
