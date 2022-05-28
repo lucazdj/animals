@@ -6,11 +6,11 @@ export default class AccordionList {
 
   toggleAccordion(item) {
     item.classList.toggle(this.classActive);
-    item.nextElementSibling.classList.toggle(classActive);
+    item.nextElementSibling.classList.toggle(this.classActive);
   }
 
   addAccordionEvent() {
-    accordionList.forEach(((item) => {
+    this.accordionList.forEach(((item) => {
       item.addEventListener('click', () => this.toggleAccordion(item));
     }));
   }
