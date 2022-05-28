@@ -25,7 +25,7 @@ modal.init();
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
-fetchAnimals('../../animals.json', '.numbers-grid');
+fetchAnimals('./animals.json', '.numbers-grid');
 
 const animateScroll = new AnimateScroll('[data-animation="scroll"]');
 animateScroll.init();
