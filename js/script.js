@@ -9,10 +9,13 @@ import initMobileMenu from './modules/mobile-menu.js';
 import initOperating from './modules/operating.js';
 import initFetchAnimals from './modules/fetch-animals.js';
 import initFetchBitcoin from './modules/fetch-bitcoin.js';
+import SmoothScroll from './modules/smooth-scroll.js';
+
+const smoothScroll = new SmoothScroll('[data-animation="smooth"] a[href^="#"]');
+smoothScroll.init();
 
 initTabNav();
 initAccordionList();
-initSmoothScroll();
 initAnimateScroll();
 initModal();
 initTooltip();
