@@ -1,4 +1,4 @@
-import initAnimateNumbers from './animate-numbers.js';
+import AnimateNumbers from './animate-numbers.js';
 
 export default function initFetchAnimals() {
   function createAnimal(animal) {
@@ -17,7 +17,8 @@ export default function initFetchAnimals() {
         const divAnimal = createAnimal(animal);
         numbers.appendChild(divAnimal);
       });
-      initAnimateNumbers();
+      const animateNumbers = new AnimateNumbers('[data-number]', '.numbers', 'active');
+      animateNumbers.init();
     } catch {
       return false;
     }
