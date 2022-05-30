@@ -18,6 +18,13 @@
       {
         "js": "always"
       }
+    ],
+    "max-classes-per-file": [
+      "erro",
+      {
+        "ignoreExpressions": true,
+        "max": 2
+      }
     ]
   }
 }

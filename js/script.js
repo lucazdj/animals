@@ -9,6 +9,7 @@ import fetchAnimals from './modules/fetch-animals.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
 import SmoothScroll from './modules/smooth-scroll.js';
 import AccordionList from './modules/accordion-list.js';
+import SlideNav from './modules/slide.js';
 
 const smoothScroll = new SmoothScroll('[data-animation="smooth"] a[href^="#"]');
 smoothScroll.init();
@@ -40,3 +41,7 @@ const operating = new Operating('[data-week]', 'opened');
 operating.init();
 
 fetchBitcoin('https://blockchain.info/ticker', '.btc-value');
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addControl('.custom-controls');
